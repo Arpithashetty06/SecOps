@@ -7,10 +7,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket         = "learnteraformwithjanu"
-    key            = "workspace.statefile"
-    region         = "us-east-1"
-    dynamodb_table = "dynamodb-state-locking"
+    bucket = "learnteraformwithjanu"
+    key    = "workspace.statefile"
+    region = "us-east-1"
+    #dynamodb_table = "dynamodb-state-locking"
 
   }
 }
